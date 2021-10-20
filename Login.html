@@ -5,13 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <Title>Assignment 1 Login</Title>
+        <link rel="stylesheet" type="text/css" a href="CSS/Layout.css">
     </head>
     <body>
-        <header>
-            <h1>Cool Logo</h1>
-            <nav>
-                <ul>
-                    <li>
+    <div class="container">
+        <header class="grid-header">
+            <div>
+                <h1>Cool Logo</h1>
+                <nav>
+                    <ul>
+                        <li>
                         <a href="https://google.com" target="_blank">Go to Google</a>
                     </li>
                     <li>
@@ -22,27 +25,34 @@
                     </li>
                 </ul>
             </nav>
+        </div>
             <a href="Index.html">Index Page</a>
         </header>
-        <main>
-            <h3>Login</h3>
-            <form action="Result.html" method="GET">     <!-- form will need an action="page direction", method="get" == not safe for login? -->
+        <!--    END OF HEADER   -->
+
+        
+        <div class="grid-Wrapper">
+        <main class="login">
+            <h3 class="upper">Login</h3>
+            <form action="Result.html" method="GET" class="login-form">
                 <div>
-                    <label for="name">Username</label><br>
+                    <label for="name">Username</label>
                     <input type="text" name="username" id="name" placeholder="Enter your username" required>
                 </div>
                 <div>
-                    <label for="passworden">Password</label><br>
+                    <label for="passworden">Password</label>
                     <input type="password" name="password" id="passworden" placeholder="Enter your password" required>
                 </div>
-                <br>
-                <button type="reset">Reset</button>
-                <button type="submit">Sign-in</button>
-                <br>
+                <div>
+                    <input class="button" type="reset" value="Reset">
+                    <input class="button" type="submit" value="Sign-in">
+                </div>                
             </form>
         </main>
-        <footer>
+        <footer class="footer">
             <span>&copy; Daniel Carlsson</span>
         </footer>
+    </div> <!-- End of class grid-Wrapper -->
+    </div> <!-- container -->
     </body>
-</html>
+    </html>

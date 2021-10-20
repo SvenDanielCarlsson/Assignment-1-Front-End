@@ -4,33 +4,49 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assignment 1 Index</title>
+        <title>Assignment 1</title>
+        <link rel="stylesheet" type="text/css" href="CSS/Layout.css">
     </head>
     <body>
-        <header>
-            <h1>Cool Logo</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://google.com" target="_blank">Go to Google</a>
-                    </li>
-                    <li>
-                        <a href="https://thomann.de" target="_blank">Go to Thomann</a>
-                    </li>
-                    <li>
-                        <a href="https://thomann.de/se/guitarlab.html" target="_blank">Go to Thomann: Guitar Lab</a>
-                    </li>
-                </ul>
-                <a href="Login.html">Login</a>
-            </nav>
+        <div class="container">
+            <header class="grid-header">
+                <div class>
+
+                    <h1>Cool Logo</h1>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="https://google.com" target="_blank">Go to Google</a>
+                            </li>
+                            <li>
+                                <a href="https://thomann.de" target="_blank">Go to Thomann</a>
+                            </li>
+                            <li>
+                                <a href="https://thomann.de/se/guitarlab.html" target="_blank">Go to Thomann Guitar Lab</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                    <a href="Login.html">Login</a>
         </header>
-        <main>
-            <h2>Useless Facts</h2>
-            <p>Information you never asked for.</p>
-            <article>
-                <h3>Did you know...</h3>
+                <!--    END OF HEADER   -->
+
+
+        <div class="grid-Wrapper">  <!-- Question for Ulf, is it bad practice to not wrap the header aswell? -->
+        <div class="grid-main_aside">
+            <main class="grid-main">
+                <h2>Useless Facts</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Ab quas delectus, voluptate modi est odio dolore officiis, dolor 
+                    distinctio mollitia neque illum sint eius explicabo porro, ullam 
+                    iste reprehenderit iusto.
+                </p>
+                <div class="grid-article">
+                    <article>
+                        <h3>Did you know...</h3>
                 <p>Flamingos can only eat with their heads upside down.</p>
-                <p>Rubber bands last longer when refrigerated..</p>
+                <p class="blueBold">Rubber bands last longer when refrigerated.</p>
                 <p>Most car horns are in the key of F.</p>
             </article>
             <article>
@@ -40,39 +56,45 @@
                 <img src="Images/aBloat.jpg" alt="Bloat of Hippos" height="200">
                 <p>Picture credit goes to Francesco Ungaro, 
                     who uploaded it at <a href="https://unsplash.com/photos/Li1aC1AJ7Ak" target="_blank">Unsplash</a></p>
-            </article>
+                </article>
+            </div> <!-- End of class grid-article -->
         </main>
-        <aside>
+        <aside class="grid-aside">
             <h3>Fake Places</h3>
-            <ul>
-                <li>
-                    <h4>Swedania</h4>
-                    <ol>
-                        <li><p>Stockholmia 25M</p></li>
-                        <li><p>Goofyburg 2M</p></li>
-                        <li><p>Sealen 15K</p></li>                        
-                    </ol>
-                </li>
-                <li>
-                    <h4>Duckland</h4>
-                    <ol>
-                        <li><p>Duckenberg 1M</p></li> <!-- not a big fan of paragraph inside <li> -->
-                        <li><p>Goosecity 440K</p></li>
-                        <li><p>Flappen 20K</p></li>
-                    </ol>
-                </li>
-                <li>
-                    <h4>Fjodor Kingdom</h4>
-                    <ol>
+            <div>
+                <ul class="colorplay">
+                    <li>
+                        <h4>Swedania</h4>
+                        <ol>
+                            <li><p>Stockholmia 25M</p></li>
+                            <li><p>Goofyburg 2M</p></li>
+                            <li><p>Sealen 15K</p></li>                        
+                        </ol>
+                    </li>
+                    <li>
+                        <h4>Duckland</h4>
+                        <ol>
+                            <li><p>Duckenberg 1M</p></li> <!-- not a big fan of paragraph inside <li> -->
+                                <li><p>Goosecity 440K</p></li>
+                                <li><p>Flappen 20K</p></li>
+                            </ol>
+                    </li>
+                    <li>
+                        <h4>Fjodor Kingdom</h4>
+                        <ol>
                         <li><p>Fjodorville 550K</p></li>
                         <li><p>Sandy Groves 120K</p></li>
                         <li><p>Lithella 80K</p></li>                        
                     </ol>
                 </li>
             </ul>
-        </aside>
-        <footer>
+        </div>
+    </aside>
+</div> <!-- end of class grid-main_aside -->
+        <footer class="footer">
             <span>&copy; Daniel Carlsson</span>
         </footer>
+    </div> <!-- End of class grid-Wrapper -->
+    </div> <!-- container -->
     </body>
-</html>
+    </html>
