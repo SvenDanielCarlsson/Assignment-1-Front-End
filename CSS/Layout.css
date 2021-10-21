@@ -162,7 +162,7 @@ header > a:hover{
 }
 
 
-/*______------ main to aside & footer AKA Wrapper ------______    */
+/*______------ main to aside ------______    */
 .grid-main_aside{
     display: grid;
     grid-template-columns: 75% 25%;
